@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#F7F6DC</color>
+    <color name="colorSecendy">#B1D7B4</color>
+    <color name="oranglith">#FFC090</color>
+
 </resources>

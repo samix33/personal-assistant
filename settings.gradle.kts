@@ -8,6 +8,9 @@ pluginManagement {
             }
         }
         mavenCentral()
+
+        maven { url = uri("https://www.jitpack.io" ) }
+
         gradlePluginPortal()
     }
 }
@@ -16,9 +19,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://jitpack.io" ) }
+
     }
 }
 
 rootProject.name = "personal assistant"
 include(":app")
- 
