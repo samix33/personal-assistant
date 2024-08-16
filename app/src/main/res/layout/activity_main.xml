@@ -30,13 +30,13 @@
     <FrameLayout
         android:id="@+id/framelayot"
         android:layout_width="match_parent"
-        android:layout_height="600dp" />
+        android:layout_height="match_parent" />
 
     <me.ibrahimsn.lib.SmoothBottomBar
+
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         app:backgroundColor="@color/colorSecendy"
-        app:badgeColor="@color/colorBadge"
         app:menu="@menu/menu_btn_navigation" />
 </LinearLayout>

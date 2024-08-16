@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.personalassistant.R
 import com.example.personalassistant.databinding.ActivityMainBinding
+import com.example.personalassistant.ui.features.AiFragment
+import com.example.personalassistant.ui.features.DigitalCurrencyFragment
+import com.example.personalassistant.ui.features.HomeFragment
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -14,16 +17,18 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        transform(HomeFragment())
         binding.bottomBar.onItemSelected = {
             when(it){
+                0->{
+                    transform(DigitalCurrencyFragment())
+                }
                 1->{
-
+                    transform(HomeFragment())
 
                 }
                 2->{
-
-                }
-                3->{
+                    transform(AiFragment())
 
                 }
             }
