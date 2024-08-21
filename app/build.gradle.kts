@@ -52,5 +52,7 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation ("com.github.ibrahimsn98:SmoothBottomBar:1.7.9")
+    implementation (libs.neumorphism)
+
 
 }

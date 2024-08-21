@@ -7,36 +7,42 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.MainActivity">
-
-    <com.google.android.material.appbar.AppBarLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.google.android.material.appbar.MaterialToolbar
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary">
+            android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <com.google.android.material.appbar.MaterialToolbar
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="@font/iransans"
-                android:text="@string/app_name"
-                android:textSize="22dp" />
-        </com.google.android.material.appbar.MaterialToolbar>
-    </com.google.android.material.appbar.AppBarLayout>
+                android:background="@color/colorPrimary">
 
-    <FrameLayout
-        android:id="@+id/framelayot"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/iransans"
+                    android:text="@string/app_name"
+                    android:textSize="22dp" />
+            </com.google.android.material.appbar.MaterialToolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+        <FrameLayout
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+            android:id="@+id/framelayot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <me.ibrahimsn.lib.SmoothBottomBar
+            android:layout_gravity="bottom"
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:backgroundColor="@color/colorSecendy"
+            app:menu="@menu/menu_btn_navigation" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-    <me.ibrahimsn.lib.SmoothBottomBar
 
-        android:id="@+id/bottomBar"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        app:backgroundColor="@color/colorSecendy"
-        app:menu="@menu/menu_btn_navigation" />
+
+
 </LinearLayout>

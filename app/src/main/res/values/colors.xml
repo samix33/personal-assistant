@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    //lith
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorPrimary">#F7F6DC</color>
     <color name="colorSecendy">#B1D7B4</color>
     <color name="oranglith">#FFC090</color>
     <color name="colortext">#D6F2FF</color>
+    <color name="Gray">#969CA3</color>
+
+    /Dark
+    <color name="colorSecendydark">#255A70</color>
+    <color name="colorPrimarydark">#1B3F4F</color>
 
 </resources>
