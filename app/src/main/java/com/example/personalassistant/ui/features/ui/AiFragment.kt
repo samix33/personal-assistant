@@ -1,4 +1,4 @@
-package com.example.personalassistant.ui.features
+package com.example.personalassistant.ui.features.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

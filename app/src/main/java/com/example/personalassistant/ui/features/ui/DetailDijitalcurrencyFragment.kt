@@ -1,4 +1,4 @@
-package com.example.personalassistant.ui.features
+package com.example.personalassistant.ui.features.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,17 +7,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import com.example.personalassistant.R
-import com.example.personalassistant.databinding.FragmentDigitalCurrencyBinding
+import com.example.personalassistant.databinding.FragmentDigitalCurrencyDetailBinding
 
-class DigitalCurrencyFragment : Fragment() {
-    lateinit var binding: FragmentDigitalCurrencyBinding
+
+class DetailDijitalcurrencyFragment : Fragment() {
+    lateinit var binding: FragmentDigitalCurrencyDetailBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-
+    ): View {
         // Inflate the layout for this fragment
-        binding = FragmentDigitalCurrencyBinding.inflate(inflater,container,false)
+        binding =  FragmentDigitalCurrencyDetailBinding.inflate(inflater,container,false)
         binding.button1H.setOnClickListener {
             binding.button1H.background =  ContextCompat.getDrawable(binding.root.context, R.drawable.rounded_button)
             binding.button1d.setBackgroundColor(ContextCompat.getColor(binding.root.context, R.color.colorPrimarydark))
@@ -55,9 +55,8 @@ class DigitalCurrencyFragment : Fragment() {
             binding.button1m.setBackgroundColor(ContextCompat.getColor(binding.root.context, R.color.colorPrimarydark))
             binding.button1d.setBackgroundColor(ContextCompat.getColor(binding.root.context, R.color.colorPrimarydark))
         }
-
-
         return binding.root
+
     }
 
 }

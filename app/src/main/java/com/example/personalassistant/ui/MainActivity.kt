@@ -4,11 +4,13 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import com.example.personalassistant.R
 import com.example.personalassistant.databinding.ActivityMainBinding
-import com.example.personalassistant.ui.features.AiFragment
-import com.example.personalassistant.ui.features.DigitalCurrencyFragment
-import com.example.personalassistant.ui.features.HomeFragment
+import com.example.personalassistant.ui.features.ui.AiFragment
+import com.example.personalassistant.ui.features.ui.DigitalCurrencyFragment
+import com.example.personalassistant.ui.features.ui.HomeFragment
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -18,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         transform(HomeFragment())
+
         binding.bottomBar.onItemSelected = {
             when(it){
                 0->{
